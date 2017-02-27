@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE ACTIONS SYSTEM "actions.dtd">
+<ACTIONS>
+	<ACTION NAME="secondmate-enabled" NO_REPEAT="TRUE">
+		<CODE>
+			secondmate.SecondMatePlugin.setEnabled(
+				!secondmate.SecondMatePlugin.isEnabled());
+		</CODE>
+		<IS_SELECTED>
+			return secondmate.SecondMatePlugin.isEnabled();
+		</IS_SELECTED>
+	</ACTION>
+
+</ACTIONS>

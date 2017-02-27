@@ -1,0 +1,46 @@
+==========
+Second Mate
+==========
+
+:version: 0.1
+:author: Jiayi Wei
+
+.. :wrap=none:noTabs=false:maxLineLen=80:mode=rest:tabSize=4:folding=none:
+
+Overview
+========
+
+`Second Mate` is an editing plugin based on `First Mate`, with some enhancements
+on parenthesis pairing.
+
+
+Its primary feature is `Auto-Paired Characters`. When
+enabled, when you type one of the following characters:
+
+* ``"``
+* `````
+* ``(``
+* ``[``
+* ``{``
+
+the corresponding closing character is inserted
+after the caret.
+
+* ``" => "|"``
+* ``` => `|```
+* ``( => (|)``
+* ``[ => [|]``
+* ``{ => {|}``
+
+* In addition, the aforementioned paring behavior will not be
+triggered if the caret is following by some unpaired characters.
+
+For example, ``|a => "|a`` instead of ``""|a``,
+but ``(|) or [|] => ((|)) or [(|)]``
+
+* Deletion is also enhanced with paring deletion.
+
+In situations like this: ``(((|)))``, press backspace 3 times will delete
+them all.
+
+``(|)`` followed by pressing ``)`` becomes ``()|``

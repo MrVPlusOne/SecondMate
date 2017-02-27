@@ -1,0 +1,35 @@
+secondmate.auto-enable=true
+
+plugin.secondmate.SecondMatePlugin.description=Second Mate primary feature is `Auto-Paired Characters`
+plugin.secondmate.SecondMatePlugin.activate=secondmate.auto-enable
+plugin.secondmate.SecondMatePlugin.name=Second Mate
+plugin.secondmate.SecondMatePlugin.author=Jiayi Wei
+plugin.secondmate.SecondMatePlugin.version=0.1
+plugin.secondmate.SecondMatePlugin.docs=doc/index.html
+plugin.secondmate.SecondMatePlugin.depend.0=jedit 04.03.99.00
+plugin.secondmate.SecondMatePlugin.depend.1=jdk 1.7
+plugin.secondmate.SecondMatePlugin.usePluginHome=true
+
+plugin.secondmate.SecondMatePlugin.option-pane=secondmate
+options.secondmate.label=Second Mate
+options.secondmate.code=new secondmate.options.GeneralOptionPane();
+options.secondmate.auto-enable=Enable Auto-Paired characters on startup
+options.secondmate.no-apostrophe-after-letter=Don't auto-pair apostrophe following letter
+options.secondmate.undo-on-backspace=Remove auto-pair character on backspace
+options.secondmate.wrap-selections=Auto-pair characters around selections
+
+secondmate.undo-on-backspace=true
+secondmate.no-apostrophe-after-letter=true
+secondmate.undo-on-backspace=true
+secondmate.wrap-selections=true
+
+secondmate-enabled.label=Enable Second Mate
+
+
+plugin.secondmate.SecondMatePlugin.menu=secondmate-enabled
+
+
+# exclusions (default is true)
+mode.vbscript.pair.apostrophe=false
+mode.lisp.pair.apostrophe=false
+mode.isabelle.pair.apostrophe=false
